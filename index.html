@@ -1,0 +1,640 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<!-- Google Analytics 4: troque G-XXXXXXXXXX pelo ID da propriedade da BSCA e remova os comentários abaixo -->
+<!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-XXXXXXXXXX');</script> -->
+<style>:root{color-scheme:light}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
+</head><body>
+<title>Taste of the Harvest 2026</title>
+<meta name="description" content="Taste of the Harvest 2026 Special Selection: 22 BSCA-certified Brazilian specialty coffees, their producers and contacts.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Jost:wght@300;400;500;600&family=Mrs+Saint+Delafield&family=Playfair+Display:ital,wght@0,400;0,500;1,400&family=Poppins:wght@800&display=swap">
+<style>
+/* Layout: catalogue-as-website. Cream paper + seigaiha band (from the printed edition), each lot = photo banner + espresso story band + spec sheet, sticky index for jumping between lots. */
+:root{
+  --paper:#F8F4DE; --paper-2:#EFE8CB; --ink:#2A221D; --ink-soft:#5E5248; --rule:#2A221D;
+  --band:#2D2520; --on-band:#F8F4DE; --on-band-soft:#D8CDB3;
+  --accent:#E3432A; --accent-ink:#B5301B; --jade:#3B8A77; --tan:#DED1AF;
+  --brand-surface:#F8F4DE; --logo-surface:transparent; --shadow:rgba(42,34,29,.14); --scrim:rgba(20,15,12,.55);
+  --f-display:"Playfair Display","Bodoni 72",Didot,Georgia,serif;
+  --f-body:"Barlow Condensed","Futura Condensed","Avenir Next Condensed","Arial Narrow",sans-serif;
+  --f-ui:"Jost",Futura,"Century Gothic","Avenir Next",system-ui,sans-serif;
+  --f-script:"Mrs Saint Delafield","Brush Script MT",cursive;
+  --f-tag:"Poppins","Arial Black",sans-serif;
+  --gutter:clamp(16px,4vw,40px); --maxw:1180px; --nav-h:58px;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --paper:#1B1613; --paper-2:#251E1A; --ink:#F2EAD0; --ink-soft:#BFB39B; --rule:#CFC4A6;
+  --band:#120E0C; --on-band:#F2EAD0; --on-band-soft:#BFB39B;
+  --accent:#F0573D; --accent-ink:#FF8A70; --jade:#62B7A1; --tan:#2E2621;
+  --logo-surface:#F4EFD6; --shadow:rgba(0,0,0,.45); --scrim:rgba(8,6,5,.6); color-scheme:dark}}
+:root[data-theme="dark"]{
+  --paper:#1B1613; --paper-2:#251E1A; --ink:#F2EAD0; --ink-soft:#BFB39B; --rule:#CFC4A6;
+  --band:#120E0C; --on-band:#F2EAD0; --on-band-soft:#BFB39B;
+  --accent:#F0573D; --accent-ink:#FF8A70; --jade:#62B7A1; --tan:#2E2621;
+  --logo-surface:#F4EFD6; --shadow:rgba(0,0,0,.45); --scrim:rgba(8,6,5,.6); color-scheme:dark}
+
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:calc(var(--nav-h) + 16px)}
+@media (prefers-reduced-motion: reduce){html{scroll-behavior:auto}*{animation:none!important;transition:none!important}}
+body{background:var(--paper);color:var(--ink);font-family:var(--f-body);font-size:1.18rem;line-height:1.5;-webkit-font-smoothing:antialiased}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:2px}
+.wrap{max-width:var(--maxw);margin-inline:auto;padding-inline:var(--gutter)}
+.eyebrow{font-family:var(--f-ui);font-size:.78rem;letter-spacing:.22em;text-transform:uppercase;font-weight:500;color:var(--accent-ink)}
+.waves{background-color:var(--paper);background-size:56px 28px}
+.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+
+/* ---------- sticky nav ---------- */
+.nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:40;background:var(--paper);border-bottom:1px solid color-mix(in srgb,var(--rule) 22%,transparent)}
+.nav .wrap{display:flex;align-items:center;gap:16px;height:var(--nav-h)}
+.nav-brand{display:flex;align-items:baseline;gap:8px;text-decoration:none;font-family:var(--f-tag);font-weight:800;font-size:.95rem;letter-spacing:.02em;line-height:1;white-space:nowrap}
+.nav-brand small{font-family:var(--f-ui);font-weight:500;font-size:.7rem;letter-spacing:.18em;color:var(--accent-ink)}
+.nav-links{display:flex;gap:4px;margin-left:auto}
+.nav-links a{font-family:var(--f-ui);font-size:.82rem;letter-spacing:.14em;text-transform:uppercase;text-decoration:none;padding:8px 12px;border-radius:999px;color:var(--ink-soft)}
+.nav-links a:hover,.nav-links a[aria-current="true"]{color:var(--ink);background:var(--paper-2)}
+.btn{white-space:nowrap;display:inline-flex;align-items:center;gap:8px;font-family:var(--f-ui);font-size:.82rem;letter-spacing:.14em;text-transform:uppercase;font-weight:500;padding:10px 16px;border-radius:999px;border:1px solid var(--ink);background:transparent;color:var(--ink);cursor:pointer;text-decoration:none;transition:background .2s,color .2s}
+.btn:hover{background:var(--ink);color:var(--paper)}
+.btn-solid{background:var(--accent);border-color:var(--accent);color:#fff}
+.btn-solid:hover{background:var(--accent-ink);border-color:var(--accent-ink);color:#fff}
+.btn svg{width:16px;height:16px;flex:none}
+.nav-progress{position:absolute;left:0;bottom:-1px;height:2px;background:var(--accent);width:0;transition:width .15s linear}
+@media (max-width:760px){.nav-links{display:none}.nav .btn{margin-left:auto;padding:9px 14px}.nav-brand small{display:none}.nav .btn .lbl-long{display:none}}
+@media (max-width:360px){.nav-brand{font-size:.8rem}}
+.lbl-short{display:none}@media (max-width:760px){.nav .btn .lbl-short{display:inline}}
+
+/* ---------- masthead ---------- */
+.mast{position:relative;overflow:hidden}
+.mast-pattern{height:clamp(90px,14vw,170px)}
+.mast-body{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);gap:clamp(20px,4vw,56px);align-items:center;margin-top:clamp(-150px,-11vw,-70px);padding-bottom:clamp(28px,4vw,48px)}
+.mast-logo{position:relative;background:var(--logo-surface);border-radius:24px;padding:8px}
+.mast-logo img{display:block;width:100%;height:auto}
+.plaque{border:1px solid var(--rule);padding:22px 20px 18px;text-align:center;position:relative;max-width:440px}
+.plaque .yr{position:absolute;top:-.75em;left:50%;transform:translateX(-50%);background:var(--paper);padding:0 12px;font-family:var(--f-ui);font-weight:500;color:var(--accent);font-size:1rem;letter-spacing:.08em}
+.plaque .sp{font-family:var(--f-display);font-size:clamp(2.2rem,5vw,3.4rem);letter-spacing:.32em;line-height:1;margin-right:-.32em}
+.plaque .sel{position:absolute;bottom:-.62em;left:50%;transform:translateX(-50%);background:var(--paper);padding:0 14px;font-family:var(--f-script);font-size:2.4rem;line-height:1;color:var(--accent)}
+.mast-copy{display:grid;gap:22px;justify-items:start}
+.mast-copy h1{font-family:var(--f-display);font-weight:400;font-size:clamp(1.6rem,2.6vw,2.15rem);line-height:1.18;margin:14px 0 0;text-wrap:balance}
+.mast-copy p{margin:0;color:var(--ink-soft);max-width:46ch}
+.mast-cta{display:flex;flex-wrap:wrap;gap:10px}
+.ruler{background:var(--brand-surface);border-top:1px solid rgba(42,34,29,.15)}
+.ruler .wrap{display:flex;flex-wrap:wrap;align-items:flex-end;gap:16px 36px;padding-block:18px}
+.ruler figure{margin:0;display:grid;gap:8px}
+.ruler figcaption{font-family:var(--f-tag);font-weight:800;font-size:.62rem;letter-spacing:.22em;color:#2A221D;text-transform:uppercase}
+.ruler .logos{display:flex;align-items:center;gap:28px;flex-wrap:wrap}
+.ruler img{height:52px;width:auto;display:block}
+.ruler img.apex{height:42px}
+.rule-red{height:10px;background:var(--accent)}
+@media (max-width:760px){
+  .mast-body{grid-template-columns:1fr;margin-top:-60px}
+  .plaque{margin-inline:auto}
+  .mast-copy{justify-items:stretch}
+  .ruler img{height:40px}.ruler img.apex{height:32px}
+}
+
+/* ---------- story ---------- */
+.story{padding-block:clamp(56px,8vw,110px)}
+.story-grid{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:clamp(28px,5vw,72px);align-items:start}
+.story-grid>div:first-child{position:sticky;top:calc(var(--nav-h) + 32px)}
+.story blockquote{margin:16px 0 0;font-family:var(--f-display);font-size:clamp(1.9rem,3.6vw,3.1rem);line-height:1.12;text-wrap:balance}
+.story blockquote em{font-style:italic;color:var(--accent-ink)}
+.story-text{display:grid;gap:14px;max-width:62ch}
+.story-text p{margin:0}
+.story-text .sign{font-family:var(--f-ui);font-size:.85rem;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-soft)}
+.facts{margin-top:clamp(40px,6vw,72px);display:grid;grid-template-columns:repeat(4,minmax(0,1fr));border-top:1px solid var(--rule);border-bottom:1px solid var(--rule)}
+.fact{padding:20px 18px;display:grid;gap:4px}
+.fact+.fact{border-left:1px solid color-mix(in srgb,var(--rule) 35%,transparent)}
+.fact b{font-family:var(--f-display);font-weight:400;font-size:clamp(2.2rem,4vw,3.2rem);line-height:1;font-variant-numeric:lining-nums tabular-nums}
+.fact span{font-family:var(--f-ui);font-size:.78rem;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-soft)}
+.thanks{margin-top:28px;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:20px}
+.seal{border:1.5px solid var(--accent);color:var(--accent-ink);padding:20px 22px;font-size:1.15rem;display:flex;gap:16px;align-items:center}
+.seal svg{flex:none;width:44px;height:44px}
+.partners{padding:20px 22px;background:var(--paper-2);display:grid;gap:8px;align-content:center}
+.partners ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:8px}
+.partners li{font-family:var(--f-ui);font-size:.85rem;letter-spacing:.1em;text-transform:uppercase;border:1px solid var(--rule);padding:5px 12px;border-radius:999px}
+@media (max-width:860px){.story-grid>div:first-child{position:static}.story-grid,.thanks{grid-template-columns:1fr}.facts{grid-template-columns:repeat(2,minmax(0,1fr))}.fact:nth-child(3){border-left:0}.fact:nth-child(n+3){border-top:1px solid color-mix(in srgb,var(--rule) 35%,transparent)}}
+
+/* ---------- index ---------- */
+.index{padding-block:clamp(48px,7vw,90px);background:var(--paper-2)}
+.sec-head{display:flex;flex-wrap:wrap;align-items:end;justify-content:space-between;gap:16px;margin-bottom:24px}
+.sec-head h2{font-family:var(--f-display);font-weight:400;font-size:clamp(2rem,4vw,3rem);margin:6px 0 0;line-height:1.05}
+.filters{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin-bottom:22px}
+.field{display:flex;align-items:center;gap:8px;border:1px solid var(--rule);border-radius:999px;padding:0 14px;background:var(--paper);height:42px;min-width:0}
+.field svg{width:16px;height:16px;flex:none;color:var(--ink-soft)}
+.field input,.field select{border:0;background:transparent;color:var(--ink);font-family:var(--f-ui);font-size:.95rem;outline:none;min-width:0;height:100%}
+.field input{width:220px}
+.field select{cursor:pointer;max-width:220px}
+.count{font-family:var(--f-ui);font-size:.85rem;color:var(--ink-soft);margin-left:auto}
+.clear{font-family:var(--f-ui);font-size:.85rem;background:none;border:0;color:var(--accent-ink);text-decoration:underline;cursor:pointer;padding:6px}
+.tiles{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:18px;list-style:none;margin:0;padding:0}
+.tile a{display:grid;grid-template-rows:auto 1fr;height:100%;text-decoration:none;background:var(--paper);border:1px solid color-mix(in srgb,var(--rule) 18%,transparent);transition:transform .25s,box-shadow .25s}
+.tile a:hover{transform:translateY(-3px);box-shadow:0 14px 30px -14px var(--shadow)}
+.tile .ph{position:relative;aspect-ratio:16/9;overflow:hidden;background:var(--band)}
+.tile img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .5s}
+.tile a:hover img{transform:scale(1.04)}
+.tile .no{position:absolute;top:10px;left:10px;font-family:var(--f-ui);font-size:.72rem;letter-spacing:.14em;background:var(--paper);color:var(--ink);padding:3px 8px}
+.tile .tbody{padding:14px 16px 16px;display:grid;gap:6px;align-content:start}
+.tile .farm{font-family:var(--f-ui);font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;color:var(--accent-ink)}
+.tile h3{font-family:var(--f-display);font-weight:400;font-size:1.3rem;line-height:1.15;margin:0;text-wrap:balance}
+.tile .meta{font-size:1rem;color:var(--ink-soft)}
+.tile .views{font-family:var(--f-ui);font-size:.75rem;color:var(--ink-soft);display:flex;gap:6px;align-items:center;margin-top:4px}
+.tile .views svg{width:14px;height:14px}
+.empty{padding:40px;text-align:center;border:1px dashed var(--rule);font-family:var(--f-ui)}
+
+/* ---------- lots ---------- */
+.lots{padding-block:clamp(40px,6vw,80px);display:grid;gap:clamp(56px,8vw,110px)}
+.lot{scroll-margin-top:calc(var(--nav-h) + 12px)}
+.lot-hero{position:relative;aspect-ratio:21/9;max-height:560px;width:100%;overflow:hidden;background:var(--band)}
+.lot-hero img{width:100%;height:100%;object-fit:cover;display:block}
+.lot-hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 30%,var(--scrim) 100%)}
+.lot-hero .cap{position:absolute;inset:auto 0 0 0;z-index:1;text-align:center;color:#F8F4DE;padding:0 16px clamp(14px,3vw,30px)}
+.lot-hero .cap .farm{font-family:var(--f-ui);font-size:clamp(.78rem,1.4vw,1rem);letter-spacing:.2em;text-transform:uppercase}
+.lot-hero .cap h3{font-family:var(--f-display);font-weight:400;font-size:clamp(1.7rem,4.6vw,3.6rem);line-height:1.04;margin:4px 0 0;text-transform:uppercase;text-wrap:balance;text-shadow:0 2px 18px rgba(0,0,0,.35)}
+.lot-hero .cap .sel{font-family:var(--f-script);font-size:clamp(1.8rem,3.4vw,2.8rem);line-height:1;display:block;margin-top:2px}
+.lot-hero .no{position:absolute;top:14px;left:14px;z-index:1;font-family:var(--f-ui);font-size:.75rem;letter-spacing:.16em;background:var(--paper);color:var(--ink);padding:4px 10px}
+.lot-hero .cert{position:absolute;top:14px;right:14px;z-index:1;font-family:var(--f-ui);font-size:.72rem;letter-spacing:.12em;background:var(--accent);color:#fff;padding:4px 10px;text-transform:uppercase}
+.lot-body{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.05fr)}
+.lot-story{background:var(--band);color:var(--on-band);padding:clamp(24px,3.4vw,44px);display:grid;align-content:start;gap:18px}
+.lot-story p{margin:0;max-width:62ch;font-size:1.2rem;line-height:1.55}
+.lot-story .label{font-family:var(--f-ui);font-size:.72rem;letter-spacing:.2em;text-transform:uppercase;color:var(--on-band-soft)}
+.lot-sheet{padding:clamp(20px,3vw,36px);display:grid;gap:22px;border:1px solid color-mix(in srgb,var(--rule) 30%,transparent);border-left:0}
+.flavor{display:grid;grid-template-columns:auto minmax(0,1fr);border:1px solid var(--rule)}
+.flavor .h{font-family:var(--f-display);font-size:1.7rem;line-height:1.05;padding:16px 20px;border-right:1px solid var(--rule);display:flex;align-items:center}
+.flavor ul{list-style:none;margin:0;padding:14px 18px;display:flex;flex-wrap:wrap;gap:8px;align-content:center;justify-content:flex-end}
+.flavor li{font-family:var(--f-ui);font-size:.9rem;letter-spacing:.08em;text-transform:uppercase;padding:6px 12px;border-radius:999px;background:var(--paper-2)}
+.scales{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;text-align:center}
+.scale .t{font-family:var(--f-ui);font-size:.95rem;letter-spacing:.06em;text-transform:uppercase}
+.dots{display:flex;gap:4px;justify-content:center;margin-top:6px}
+.dots i{width:16px;height:16px;border-radius:50%;border:1.5px solid var(--accent);display:block}
+.dots i.on{background:var(--accent)}
+.scale .sub{font-family:var(--f-body);font-weight:500;font-size:.95rem;letter-spacing:.06em;text-transform:uppercase;margin-top:4px;color:var(--ink-soft);min-height:1.4em}
+.spec{border:1px solid var(--rule);font-family:var(--f-ui);font-size:.92rem}
+.spec .row{display:grid;border-top:1px solid var(--rule)}
+.spec .row:first-child{border-top:0}
+.spec .row.two{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}
+.spec .row.cq{grid-template-columns:minmax(0,1fr) auto}
+.spec .cell{padding:10px 14px;display:grid;gap:2px;align-content:start;min-width:0}
+.spec .cell+.cell{border-left:1px solid var(--rule)}
+.spec .k{letter-spacing:.14em;text-transform:uppercase;color:var(--ink-soft);font-size:.74rem}
+.spec .v{text-transform:uppercase;letter-spacing:.06em}
+.spec .mono{font-variant-numeric:tabular-nums;letter-spacing:.18em}
+.rep{display:grid;grid-template-columns:auto minmax(0,1fr);gap:16px;align-items:center;padding:16px;background:var(--paper-2)}
+.rep-ph{display:flex}
+.rep-ph img{width:72px;height:84px;object-fit:cover;border-radius:36px 36px 4px 4px;border:3px solid var(--paper);display:block}
+.rep-ph img+img{margin-left:-14px}
+.rep .who{font-family:var(--f-ui);font-size:.72rem;letter-spacing:.2em;text-transform:uppercase;color:var(--accent-ink)}
+.rep .name{font-family:var(--f-display);font-size:1.35rem;line-height:1.15;margin:2px 0 8px}
+.rep .actions{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.mail{font-family:var(--f-ui);font-size:.95rem;word-break:break-all;color:var(--ink);text-decoration-color:var(--accent);text-underline-offset:3px;user-select:all}
+.mini{font-family:var(--f-ui);font-size:.74rem;letter-spacing:.12em;text-transform:uppercase;padding:7px 12px;border-radius:999px;border:1px solid var(--rule);background:var(--paper);color:var(--ink);cursor:pointer;display:inline-flex;gap:6px;align-items:center;text-decoration:none}
+.mini:hover{background:var(--ink);color:var(--paper)}
+.mini.solid{background:var(--accent);border-color:var(--accent);color:#fff}
+.mini.solid:hover{background:var(--accent-ink);border-color:var(--accent-ink)}
+.mini svg{width:14px;height:14px}
+.lot-foot{display:flex;flex-wrap:wrap;gap:10px 18px;align-items:center;justify-content:space-between;padding-top:14px;font-family:var(--f-ui);font-size:.82rem}
+.stat{display:flex;gap:14px;color:var(--ink-soft);flex-wrap:wrap}
+.stat span{display:inline-flex;gap:6px;align-items:center}
+.stat svg{width:15px;height:15px}
+.stat b{color:var(--ink);font-weight:600;font-variant-numeric:tabular-nums}
+.pager{display:flex;gap:8px;flex-wrap:wrap}
+.pager a{text-decoration:none}
+@media (max-width:900px){.lot-body{grid-template-columns:1fr}.lot-sheet{border-left:1px solid color-mix(in srgb,var(--rule) 30%,transparent);border-top:0}.lot-hero{aspect-ratio:16/10}}
+@media (max-width:480px){.flavor{grid-template-columns:1fr}.flavor .h{border-right:0;border-bottom:1px solid var(--rule);padding:12px 16px}.flavor ul{justify-content:flex-start}.spec .row.two{grid-template-columns:1fr}.spec .row.two .cell+.cell{border-left:0;border-top:1px solid var(--rule)}.dots i{width:13px;height:13px}.lot-hero{aspect-ratio:4/3}}
+
+/* ---------- metrics ---------- */
+.metrics{padding-block:clamp(56px,8vw,100px);background:var(--paper-2)}
+.kpis{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0;border-top:1px solid var(--rule);border-bottom:1px solid var(--rule);margin-bottom:28px}
+.kpi{padding:20px 18px;display:grid;gap:4px;min-width:0}
+.kpi+.kpi{border-left:1px solid color-mix(in srgb,var(--rule) 35%,transparent)}
+.kpi b{font-family:var(--f-display);font-weight:400;font-size:clamp(1.9rem,3.6vw,2.8rem);line-height:1.05;font-variant-numeric:lining-nums tabular-nums;overflow-wrap:anywhere}
+.kpi span{font-family:var(--f-ui);font-size:.76rem;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-soft)}
+.mtools{display:flex;flex-wrap:wrap;gap:10px;align-items:center;justify-content:space-between;margin-bottom:14px}
+.seg{display:inline-flex;border:1px solid var(--rule);border-radius:999px;padding:3px}
+.seg button{font-family:var(--f-ui);font-size:.78rem;letter-spacing:.12em;text-transform:uppercase;border:0;background:transparent;color:var(--ink);padding:7px 14px;border-radius:999px;cursor:pointer}
+.seg button[aria-pressed="true"]{background:var(--ink);color:var(--paper)}
+.mstatus{font-family:var(--f-ui);font-size:.85rem;color:var(--ink-soft);display:flex;gap:8px;align-items:center}
+.mstatus i{width:8px;height:8px;border-radius:50%;background:var(--ink-soft);display:inline-block}
+.mstatus.live i{background:var(--jade);box-shadow:0 0 0 4px color-mix(in srgb,var(--jade) 25%,transparent)}
+.mtable-wrap{overflow-x:auto;background:var(--paper);border:1px solid color-mix(in srgb,var(--rule) 25%,transparent)}
+table.mt{width:100%;border-collapse:collapse;font-family:var(--f-ui);font-size:.92rem;min-width:560px}
+.mt th{text-align:left;font-weight:500;font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-soft);padding:12px 14px;border-bottom:1px solid var(--rule)}
+.mt td{padding:10px 14px;border-bottom:1px solid color-mix(in srgb,var(--rule) 14%,transparent);vertical-align:middle}
+.mt tr:last-child td{border-bottom:0}
+.mt .rk{width:44px;color:var(--ink-soft);font-variant-numeric:tabular-nums}
+.mt .nm a{text-decoration:none;font-family:var(--f-display);font-size:1.05rem}
+.mt .nm a:hover{color:var(--accent-ink)}
+.mt .nm small{display:block;font-family:var(--f-ui);font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-soft)}
+.mt .num{text-align:right;font-variant-numeric:tabular-nums;width:72px}
+.bar{position:relative;height:10px;background:var(--paper-2);border-radius:5px;min-width:120px;overflow:hidden}
+.bar i{position:absolute;inset:0 auto 0 0;background:var(--accent);border-radius:5px;transition:width .4s}
+.bar.k i{background:var(--jade)}
+.mnote{font-family:var(--f-ui);font-size:.82rem;color:var(--ink-soft);margin-top:14px;max-width:80ch}
+@media (max-width:640px){.kpis{grid-template-columns:1fr}.kpi+.kpi{border-left:0;border-top:1px solid color-mix(in srgb,var(--rule) 35%,transparent)}}
+
+/* ---------- footer ---------- */
+footer.site{background:var(--band);color:var(--on-band);padding-block:48px 28px}
+footer .fgrid{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);gap:28px;align-items:start}
+footer .tag{font-family:var(--f-tag);font-weight:800;font-size:clamp(1.3rem,3vw,2rem);letter-spacing:.02em;line-height:1.05;margin:0}
+footer p{margin:10px 0 0;color:var(--on-band-soft);max-width:52ch}
+footer .flinks{display:grid;gap:8px;justify-items:start;font-family:var(--f-ui);font-size:.9rem}
+footer .flinks a{color:var(--on-band);text-underline-offset:3px}
+footer .small{margin-top:32px;font-family:var(--f-ui);font-size:.75rem;letter-spacing:.08em;color:var(--on-band-soft)}
+@media (max-width:760px){footer .fgrid{grid-template-columns:1fr}}
+
+/* ---------- drawer (quick index) ---------- */
+.drawer{position:fixed;inset:0;z-index:60;display:grid;grid-template-columns:1fr min(420px,100%);visibility:hidden}
+.drawer.open{visibility:visible}
+.drawer .veil{background:rgba(15,11,9,.45);opacity:0;transition:opacity .25s;border:0;padding:0;cursor:pointer}
+.drawer.open .veil{opacity:1}
+.drawer .panel{background:var(--paper);border-left:1px solid var(--rule);transform:translateX(100%);transition:transform .3s cubic-bezier(.2,.8,.2,1);display:grid;grid-template-rows:auto 1fr;max-height:100%;padding-top:env(safe-area-inset-top,0px);min-width:0}
+.drawer.open .panel{transform:none}
+.panel-head{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:16px 20px;border-bottom:1px solid color-mix(in srgb,var(--rule) 25%,transparent)}
+.panel-head h2{font-family:var(--f-display);font-weight:400;font-size:1.6rem;margin:0}
+.panel-body{overflow-y:auto;padding:8px 12px calc(24px + env(safe-area-inset-bottom,0px));overscroll-behavior:contain}
+.panel-body h3{font-family:var(--f-ui);font-size:.72rem;letter-spacing:.2em;text-transform:uppercase;color:var(--accent-ink);margin:18px 8px 6px;font-weight:500}
+.panel-body ol{list-style:none;margin:0;padding:0}
+.panel-body a{display:grid;grid-template-columns:44px minmax(0,1fr);gap:12px;align-items:center;padding:8px;text-decoration:none;border-radius:6px}
+.panel-body a:hover,.panel-body a[aria-current="true"]{background:var(--paper-2)}
+.panel-body a[aria-current="true"] .pn{color:var(--accent-ink)}
+.panel-body img{width:44px;height:44px;object-fit:cover;border-radius:50%;display:block}
+.panel-body .pn{font-family:var(--f-display);font-size:1.05rem;line-height:1.15;display:block}
+.panel-body .pf{font-family:var(--f-ui);font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-soft);display:block}
+.x{width:40px;height:40px;border-radius:50%;border:1px solid var(--rule);background:transparent;color:var(--ink);cursor:pointer;display:grid;place-items:center}
+.x svg{width:18px;height:18px}
+.fab{position:fixed;right:16px;bottom:calc(16px + env(safe-area-inset-bottom,0px));z-index:45;box-shadow:0 10px 24px -8px var(--shadow);opacity:0;pointer-events:none;transform:translateY(10px);transition:opacity .25s,transform .25s}
+.fab.show{opacity:1;pointer-events:auto;transform:none}
+.toast{position:fixed;left:50%;bottom:calc(24px + env(safe-area-inset-bottom,0px));transform:translate(-50%,20px);background:var(--ink);color:var(--paper);font-family:var(--f-ui);font-size:.9rem;padding:10px 18px;border-radius:999px;z-index:70;opacity:0;transition:opacity .2s,transform .2s;pointer-events:none}
+.toast.show{opacity:1;transform:translate(-50%,0)}
+.lot.flash .lot-hero{outline:3px solid var(--accent);outline-offset:4px}
+</style>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-eye" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7S2 12 2 12Z"/><circle cx="12" cy="12" r="3" fill="none" stroke="currentColor" stroke-width="1.8"/></symbol>
+  <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="m4 7 8 6 8-6" fill="none" stroke="currentColor" stroke-width="1.8"/></symbol>
+  <symbol id="i-copy" viewBox="0 0 24 24"><rect x="9" y="9" width="11" height="11" rx="2" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M5 15V5a1 1 0 0 1 1-1h9" fill="none" stroke="currentColor" stroke-width="1.8"/></symbol>
+  <symbol id="i-list" viewBox="0 0 24 24"><path d="M8 6h13M8 12h13M8 18h13M3 6h.01M3 12h.01M3 18h.01" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+  <symbol id="i-x" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+  <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="2"/><path d="m20 20-4-4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12Z" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="9" r="2.5" fill="none" stroke="currentColor" stroke-width="1.8"/></symbol>
+  <symbol id="i-up" viewBox="0 0 24 24"><path d="M12 19V5M5 12l7-7 7 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-seal" viewBox="0 0 48 48"><circle cx="24" cy="24" r="21" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="24" cy="24" r="16" fill="none" stroke="currentColor" stroke-width="1" stroke-dasharray="2 3"/><path d="m16 24 6 6 11-12" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+</svg>
+
+<nav class="nav" aria-label="Main">
+  <div class="wrap">
+    <a class="nav-brand" href="#top">TASTE OF THE HARVEST <small>2026</small></a>
+    <div class="nav-links">
+      <a href="#story" data-spy="story">Story</a>
+      <a href="#coffees" data-spy="coffees">Coffees</a>
+      <a href="#metrics" data-spy="metrics">Metrics</a>
+    </div>
+    <button class="btn btn-solid" type="button" data-open-index aria-controls="drawer" aria-expanded="false"><svg><use href="#i-list"/></svg><span class="lbl-long">Coffee index</span><span class="lbl-short">Index</span></button>
+  </div>
+  <div class="nav-progress" id="progress"></div>
+</nav>
+
+<header class="mast" id="top">
+  <div class="mast-pattern waves" aria-hidden="true"></div>
+  <div class="wrap mast-body">
+    <div class="mast-logo"><img src="img/toh-logo.png" alt="Taste of the Harvest" width="840" height="536"></div>
+    <div class="mast-copy">
+      <div class="plaque" aria-label="2026 Special Selection">
+        <span class="yr">2026</span>
+        <div class="sp">SPECIAL</div>
+        <span class="sel">selection</span>
+      </div>
+      <h1>Twenty-two Brazilian specialty coffees, the families who grow them and the people to talk to about each lot.</h1>
+      <p>All lots are certified by the Brazil Specialty Coffee Association and presented to the Japanese market with SCAJ, Wataru and ECOM Japan.</p>
+      <div class="mast-cta">
+        <a class="btn btn-solid" href="#coffees">Explore the coffees</a>
+        <a class="btn" href="#story">Read the story</a>
+      </div>
+    </div>
+  </div>
+  <div class="ruler">
+    <div class="wrap">
+      <figure><figcaption>Organized by</figcaption><div class="logos"><img src="img/logo-bsca-coffee-nation.png" alt="BSCA · Brazil. The Coffee Nation." width="203" height="119"></div></figure>
+      <figure><figcaption>Promoted by</figcaption><div class="logos"><img class="apex" src="img/logo-apexbrasil.png" alt="ApexBrasil" width="578" height="123"><img src="img/logo-bsca.png" alt="BSCA Brazil Specialty Coffee Association" width="270" height="113"></div></figure>
+    </div>
+  </div>
+  <div class="rule-red"></div>
+</header>
+
+<main>
+<section class="story" id="story">
+  <div class="wrap">
+    <div class="story-grid">
+      <div>
+        <div class="eyebrow">The project</div>
+        <blockquote>Every cup can open a conversation, reveal a new origin, introduce a new producer and, perhaps, <em>begin a lasting relationship.</em></blockquote>
+      </div>
+      <div class="story-text">
+        <p>The Taste of the Harvest is an initiative created to bring Brazilian specialty coffees closer to the people who appreciate and cherish them. We believe that meaningful connections are built through experiences, and coffee has a unique way of bringing people together.</p>
+        <p>The coffees presented in this edition are a reflection of that diversity. They come from different regions and producers across Brazil, each with its own characteristics, history and way of expressing the richness of our coffee-growing landscapes. Bringing these coffees to Japan is an opportunity for us to share not only their quality, but also the people, places and work behind each lot.</p>
+        <p>This long-standing connection would not be possible without the continued support and collaboration of our partners in Japan. To all the partners and coffee professionals joining us for this experience, thank you for being part of this journey and for taking the time to discover these coffees and the stories behind them.</p>
+        <p>We hope this selection brings you closer to Brazil and inspires new connections, discoveries and possibilities.</p>
+        <p class="sign">Brazil Specialty Coffee Association (BSCA)</p>
+      </div>
+    </div>
+    <div class="facts" id="facts"></div>
+    <div class="thanks">
+      <div class="seal"><svg><use href="#i-seal"/></svg><span>All coffees featured in this selection are certified by BSCA. Buyers who acquire a lot can request the respective Quality Seal, recognizing the coffee’s certified quality and origin.</span></div>
+      <div class="partners"><span class="eyebrow">With gratitude to our partners in Japan</span><ul><li>SCAJ</li><li>Wataru</li><li>ECOM Japan</li></ul></div>
+    </div>
+  </div>
+</section>
+
+<section class="index" id="coffees" aria-labelledby="coffees-h">
+  <div class="wrap">
+    <div class="sec-head">
+      <div><div class="eyebrow">The 2026 selection</div><h2 id="coffees-h">Choose a coffee</h2></div>
+    </div>
+    <div class="filters" role="search">
+      <label class="field"><svg><use href="#i-search"/></svg><span class="sr-only">Search</span><input id="q" type="search" placeholder="Producer, farm, note…" autocomplete="off"></label>
+      <label class="field"><span class="sr-only">Region</span><select id="f-region"><option value="">All regions</option></select></label>
+      <label class="field"><span class="sr-only">Process</span><select id="f-process"><option value="">All processes</option></select></label>
+      <label class="field"><span class="sr-only">Variety</span><select id="f-variety"><option value="">All varieties</option></select></label>
+      <button class="clear" id="clear" type="button" hidden>Clear filters</button>
+      <span class="count" id="count" aria-live="polite"></span>
+    </div>
+    <ul class="tiles" id="tiles"></ul>
+  </div>
+</section>
+
+<div class="wrap lots" id="lots"></div>
+
+<section class="metrics" id="metrics" aria-labelledby="metrics-h">
+  <div class="wrap">
+    <div class="sec-head">
+      <div><div class="eyebrow">Access metrics</div><h2 id="metrics-h">Interest by coffee</h2></div>
+      <div class="mstatus" id="mstatus"><i></i><span>Connecting…</span></div>
+    </div>
+    <div class="kpis">
+      <div class="kpi"><b id="k-views">–</b><span>Coffee views</span></div>
+      <div class="kpi"><b id="k-contacts">–</b><span>Contact clicks</span></div>
+      <div class="kpi"><b id="k-top">–</b><span>Most viewed</span></div>
+    </div>
+    <div class="mtools">
+      <div class="seg" role="group" aria-label="Sort by">
+        <button type="button" data-sort="views" aria-pressed="true">Views</button>
+        <button type="button" data-sort="contacts" aria-pressed="false">Contacts</button>
+        <button type="button" data-sort="catalog" aria-pressed="false">Catalogue order</button>
+      </div>
+    </div>
+    <div class="mtable-wrap"><table class="mt"><thead><tr><th>#</th><th>Coffee</th><th>Views</th><th class="num"></th><th>Contacts</th><th class="num"></th></tr></thead><tbody id="mbody"></tbody></table></div>
+    <p class="mnote">A view is counted when a coffee stays on screen for two seconds or is opened from the index, once per coffee per visit. Contact clicks count e-mail and copy actions on the representative’s card. Figures update live for everyone viewing this page.</p>
+  </div>
+</section>
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <div class="fgrid">
+      <div>
+        <p class="tag">BRAZIL. THE COFFEE NATION.</p>
+        <p>Taste of the Harvest 2026 · Special Selection. An initiative of the Brazil Specialty Coffee Association (BSCA), promoted with ApexBrasil through the sector project Brazil. The Coffee Nation.</p>
+      </div>
+      <div class="flinks">
+        <a href="#story">The project</a>
+        <a href="#coffees">All 22 coffees</a>
+        <a href="#metrics">Access metrics</a>
+        <a href="https://shor.by/W5ag" target="_blank" rel="noopener">Catalogue link (QR code)</a>
+      </div>
+    </div>
+    <div class="small">Information as published in the Taste of the Harvest 2026 Special Selection catalogue. Certificate numbers refer to BSCA certification.</div>
+  </div>
+</footer>
+
+<div class="drawer" id="drawer" aria-hidden="true">
+  <button class="veil" type="button" tabindex="-1" aria-label="Close index" data-close-index></button>
+  <div class="panel" role="dialog" aria-modal="true" aria-labelledby="drawer-h">
+    <div class="panel-head"><h2 id="drawer-h">Coffee index</h2><button class="x" type="button" data-close-index aria-label="Close"><svg><use href="#i-x"/></svg></button></div>
+    <div class="panel-body" id="drawer-body"></div>
+  </div>
+</div>
+<button class="btn btn-solid fab" id="fab" type="button" data-open-index aria-controls="drawer"><svg><use href="#i-list"/></svg>Index</button>
+<div class="toast" id="toast" role="status"></div>
+
+<script>
+const COFFEES = [{"id": "fazenda-sertao", "producer": "Francisco Isidro", "farm": "Fazenda Sertão", "story": "Fazenda Sertão stands out as a model of quality production, with a history marked by pioneering work and innovation in coffee-growing methods. Highly awarded, the farm also represents the unity of a family built around a shared dream that became a clear purpose: producing distinctive, high-quality coffees for the specialty market.", "notes": ["Floral", "Sweet", "Citrus Fruits"], "acidity": 4, "sweetness": 4, "body": 3, "mouthfeel": "Velvety", "variety": "Yellow Bourbon", "process": "Natural", "region": "Mantiqueira de Minas", "cert": "2026-18570", "qty": 50, "rep": "Phelippe Nascimento", "email": "trade@carmocoffees.com.br", "repImg": "phelippe", "img": "img/fazenda-sertao.jpg"}, {"id": "fazenda-zaroca", "producer": "Danilo Mesquita Andrade", "farm": "Fazenda Zaroca", "story": "Located in Southern Minas Gerais, Fazenda Zaroca stands out for its sustainable production of high-quality coffees, combining tradition, innovation and respect for the environment. With elevations ranging from 950 to 1,200 meters, the farm offers ideal conditions for cultivating a wide range of specialty coffee profiles. Its commitment to sustainability is recognized through Rainforest Alliance certification. The farm grows 14 coffee varieties, valuing genetic diversity and the continuous pursuit of excellence. Respect for nature, responsible production and high-quality coffees are the pillars of Fazenda Zaroca.", "notes": ["Chocolate", "Caramel", "Honey"], "acidity": 3, "sweetness": 3, "body": 3, "mouthfeel": "Silky", "variety": "Paraíso", "process": "Pulped Natural", "region": "Sul de Minas", "cert": "2026-18597", "qty": 3, "rep": "Gabriel Miari Brito", "email": "gmiari@cdtcoffees.com.br", "repImg": "gabriel", "img": "img/fazenda-zaroca.jpg"}, {"id": "fazenda-cerca-de-pedra", "producer": "Silvio Luis Leite", "farm": "Fazenda Cerca de Pedra São Benedito", "story": "Fazenda Cerca de Pedras São Benedito, in Piatã, Chapada Diamantina, was established by first-generation producer Silvio Luis Leite in 2019. His connection with the region dates back to 1999, through BSCA and Cup of Excellence competitions, and he contributed to the creation of Cup of Excellence in Brazil and the development of its protocols. The 32-hectare property has six hectares planted with Red and Yellow Catuaí. High altitude, mild climate and slow maturation favor sweet, clean and elegant coffees. Selective harvesting, shade management, drip irrigation and slow drying on raised beds support quality. The farm won the 2020 ABIC National Championship and placed 17th in the 2021 Cup of Excellence Brazil. BSCA-certified, it also aims to serve as a farm-school for experimentation and knowledge sharing.", "notes": ["Red Fruits", "Cocoa", "Vanilla"], "acidity": 3, "sweetness": 3, "body": 3, "mouthfeel": "Smooth", "variety": "Catuaí", "process": "Pulped Natural", "region": "Chapada Diamantina", "cert": "2026-19720", "qty": 15, "rep": "Silvio Luis Leite", "email": "silvioleite@agricafe.com.br", "repImg": "silvio", "img": "img/fazenda-cerca-de-pedra.jpg"}, {"id": "fazenda-lagoa", "producer": "Marcelo Vieira", "farm": "Fazenda Lagoa", "story": "Located in Monte Belo, Sul de Minas, Fazenda Lagoa combines more than a century of family coffee tradition with a strong commitment to quality and sustainability. Led by cousins and business partners Marcelo and Adolfo, the farm produces coffee at altitudes ranging from 900 to 1,100 meters, using semi-manual harvesting, careful sorting and natural or pulped natural processing. Marcelo has contributed to Brazilian specialty coffee through his work with BSCA, while Adolfo served as the association’s president in 2016 and 2017. Approximately 600 hectares of native forest are preserved, with ecological corridors supporting biodiversity. The farm also invests in educational, cultural and community initiatives, reflecting its commitment to people, nature and specialty coffee production.", "notes": ["Winey", "Spices", "Nuts"], "acidity": 3, "sweetness": 3, "body": 4, "mouthfeel": "Creamy", "variety": "Yellow Bourbon", "process": "Anaerobic Fermentation", "region": "Sudoeste de Minas", "cert": "2026-18550", "qty": 20, "rep": "Maria Dirceia Mendes", "email": "yana@smccafe.com.br", "repImg": "dirceia", "img": "img/fazenda-lagoa.jpg"}, {"id": "fazenda-carmo-estate", "producer": "Tulio Junqueira", "farm": "Fazenda Carmo Estate", "story": "For over 150 years, the Junqueira family has been dedicated to coffee cultivation, with more than 30 years of high-quality coffee production at Carmo Estate in Sul de Minas. Túlio Junqueira leads the farm with a focus on quality, innovation and teamwork, producing Natural, Pulped Natural and experimental microlots. Research, careful post-harvest practices and an on-farm laboratory support continuous improvement. More than 45% of the property is preserved as native forest, and its processing facilities use photovoltaic energy. The estate is also home to over 80 families and supports a program that allows workers to grow their own coffee. A BSCA member since the association’s foundation and a long-standing SMC partner, Carmo Estate also earned 5th place in the 2023 Cooxupé and SMC Especialíssimo awards.", "notes": ["Fruity", "Floral", "Alcoholic"], "acidity": 3, "sweetness": 3, "body": 3, "mouthfeel": "Smooth", "variety": "Yellow Bourbon", "process": "Anaerobic Fermentation", "region": "Mantiqueira de Minas", "cert": "2026-18549", "qty": 15, "rep": "Maria Dirceia Mendes", "email": "yana@smccafe.com.br", "repImg": "dirceia", "img": "img/fazenda-carmo-estate.jpg"}, {"id": "irmas-pereira", "producer": "Maria Rogéria Costa Pereira", "farm": "Irmãs Pereira", "story": "Named after sisters Maria Rogéria Pereira and Maria Valéria Pereira, Irmãs Pereira has become a recognized name in high-quality coffee around the world. Through innovative processes, distinctive management techniques and meticulous care, the farm's coffees have consistently achieved high scores year after year.", "notes": ["Citrus Fruits", "Brown Sugar", "Nuts"], "acidity": 4, "sweetness": 4, "body": 3, "mouthfeel": "Smooth", "variety": "Yellow Bourbon", "process": "Natural", "region": "Sul de Minas", "cert": "2026-18569", "qty": 50, "rep": "Phelippe Nascimento", "email": "trade@carmocoffees.com.br", "repImg": "phelippe", "img": "img/irmas-pereira.jpg"}, {"id": "fazenda-do-salto", "producer": "Juliano Moreira Reis", "farm": "Fazenda do Salto", "story": "Fazenda do Salto is a century-old coffee farm in Sul de Minas dedicated to the production of specialty coffees. Its long history reflects the region’s coffee tradition and a continued focus on quality.", "notes": ["Red Fruits", "Brown Sugar", "Spices"], "acidity": 4, "sweetness": 3, "body": 3, "mouthfeel": "Smooth", "variety": "Arara", "process": "Natural", "region": "Sul de Minas", "cert": "2026-19726", "qty": 25, "rep": "Gabriel Miari Brito", "email": "gmiari@cdtcoffees.com.br", "repImg": "gabriel", "img": "img/fazenda-do-salto.jpg"}, {"id": "fazenda-sao-silvestre", "producer": "Ismael José de Andrade", "farm": "Fazenda São Silvestre", "story": "Fazenda São Silvestre is part of Andrade Bros, a family coffee group whose history began in 1901 in the Cerrado region of Minas Gerais. Acquired by the Andrade family in the 1990s, the farm lies near Serra do Salitre at an average altitude of 1,200 meters, where altitude and well-defined wet and dry seasons favor specialty coffee production. Quality, sustainability and continuous improvement guide the group, which has achieved 12 winning lots in the Cup of Excellence since 2016, including first place in 2018 with 93.26 points and a coffee scoring 90.36 points in 2024. São Silvestre combines distinctive terroir with careful production and a commitment to specialty coffee quality.", "notes": ["Dried Fruits", "Nuts", "Spices"], "acidity": 4, "sweetness": 4, "body": 3, "mouthfeel": "Liquorish", "variety": "Arara", "process": "Carbonic Maceration", "region": "Cerrado Mineiro", "cert": "2026-19719", "qty": 5, "rep": "Romulo Xavier Carneiro Furtado Andrade", "email": "romulo@andradebros.com", "repImg": "romulo", "img": "img/fazenda-sao-silvestre.jpg"}, {"id": "fazenda-california", "producer": "Luiz & Flávia Saldanha", "farm": "Fazenda California", "story": "Owned by the Saldanha family, Fazenda California is located in Norte Pioneiro do Paraná, where fertile volcanic soils, well-distributed rainfall and an average altitude of 750 meters favor the production of high-quality Arabica coffee. Acquired by the Saldanha Rodrigues family in 2004, the farm began a new chapter under Dr. Paulo Cesar Saldanha Rodrigues, whose vision was carried forward by Luiz and Flavia Saldanha after his passing. Both agronomists trained at ESALQ/USP, they renewed the plantations and modernized harvesting, post-harvest processing, drying and storage, implementing sustainable production practices. Their daughters, Heloisa and Maria, represent the next generation of the family's tradition and passion for coffee.", "notes": ["Dried Fruits", "Star Anise", "Floral"], "acidity": 4, "sweetness": 3, "body": 3, "mouthfeel": "Syrupy", "variety": "Arara", "process": "Natural", "region": "Norte Pioneiro do Paraná", "cert": "2026-18422", "qty": 2, "rep": "Otavio Sandrin", "email": "otavio.sandrin@capricorniocoffees.com.br", "repImg": "otavio", "img": "img/fazenda-california.jpg"}, {"id": "fazenda-trapia", "producer": "Renato Pita & Andrea Rangel", "farm": "Fazenda Trapiá", "story": "Andrea and Renato began producing coffee after retirement, pursuing a new dream together by restoring Fazenda Trapiá in the mountains of Mantiqueira. They expanded the coffee plantations to 70 hectares and approximately 190,000 trees, building modern post-harvest infrastructure. The farm values its team, provides educational initiatives and combines manual, semi-mechanized and mechanical harvesting according to the terrain. Environmental preservation is also central, with around 40,000 native Candeia trees planted and more than 30% of the property covered by native vegetation. In 2021, Trapiá placed third in the Especialíssimo Awards.", "notes": ["Floral", "Molasses", "Vanilla"], "acidity": 3, "sweetness": 4, "body": 3, "mouthfeel": "Smooth", "variety": "Acaiá", "process": "Pulped Natural", "region": "Mantiqueira de Minas", "cert": "2026-18552", "qty": 20, "rep": "Maria Dirceia Mendes", "email": "yana@smccafe.com.br", "repImg": "dirceia", "img": "img/fazenda-trapia.jpg"}, {"id": "fazenda-passeio", "producer": "Adolfo Vieira Ferreira", "farm": "Fazenda Passeio", "story": "The Vieira Ferreira family has been dedicated to coffee production for more than three generations, with over 110 years of history at Fazenda Passeio in Sul de Minas. At altitudes ranging from 1,100 to 1,280 meters, Adolfo Vieira Ferreira leads the farm with a focus on quality, innovation and team well-being. Harvesting is fully manual, with Natural, Pulped Natural and experimental fermentation processes. An experimental field with more than 40 varieties supports continuous improvement, while solar energy, native forest preservation and social initiatives reflect the farm’s commitment to sustainability. More than 65% of its production consists of specialty coffee, with recognition in competitions including Cup of Excellence 2020. A long-standing BSCA member, Adolfo served as the association’s president from 2015 to 2017 and has been an SMC partner since its founding in 2009.", "notes": ["Floral", "Orange", "Molasses"], "acidity": 4, "sweetness": 4, "body": 4, "mouthfeel": "Creamy", "variety": "Yellow Bourbon", "process": "Natural", "region": "Sudoeste de Minas", "cert": "2026-18548", "qty": 20, "rep": "Maria Dirceia Mendes", "email": "yana@smccafe.com.br", "repImg": "dirceia", "img": "img/fazenda-passeio.jpg"}, {"id": "fazenda-monte-alegre", "producer": "Fazenda Monte Alegre", "farm": "Fazenda Monte Alegre", "story": "Fazenda Monte Alegre was already a traditional coffee producer in Sul de Minas when Colonel Jorge Vieira acquired the property in 1917. The farm also produced sugarcane, rapadura and brown sugar, and in 1990 the family’s activities expanded into Cia. Monte Alegre. Over time, the focus returned increasingly to specialty coffee, giving rise to the Monte Alegre Coffees identity. Today, the farm produces certified estate coffees while combining tradition, quality, social responsibility and environmental stewardship.", "notes": ["Floral", "Citrus Fruits", "Brown Sugar"], "acidity": 4, "sweetness": 4, "body": 4, "mouthfeel": "Smooth", "variety": "Catuaí", "process": "Pulped Natural", "region": "Sul de Minas", "cert": "2026-19711", "qty": 10, "rep": "V & Hélio Leite", "email": "josefrancisco@montealegrecoffees.com", "repImg": "montealegre", "img": "img/fazenda-monte-alegre.jpg"}, {"id": "granja-sao-francisco", "producer": "Otaviano Ribeiro Ceglia", "farm": "Granja São Francisco", "story": "Granja São Francisco was acquired in 1937 by Octaviano Pinto Lopes Ribeiro, maternal grandfather of current owner Otaviano Ribeiro Ceglia. Located in Sul de Minas, the farm grows coffee at altitudes ranging from 900 to 1,300 meters. Under Otaviano’s management, the farm has renovated its plantations and introduced new varieties. Environmental preservation, employee well-being and quality are central to its work. With agronomic and technological support from COCARIVE and EMATER-MG, the farm has earned awards in Minas Gerais and Brazilian coffee quality contests, reached the Cup of Excellence finals and achieved Certifica Minas Café certification.", "notes": ["Citrus Fruits", "Tea-like", "Vanilla"], "acidity": 4, "sweetness": 3, "body": 4, "mouthfeel": "Syrupy", "variety": "Yellow Bourbon", "process": "Pulped Natural", "region": "Mantiqueira de Minas", "cert": "2026-18478", "qty": 35, "rep": "Wellington Carlos Pereira", "email": "diretoria@cocarive.com.br", "repImg": "wellington", "img": "img/granja-sao-francisco.jpg"}, {"id": "rancho-sao-benedito", "producer": "Mariana de Carvalho Junqueira", "farm": "Rancho São Benedito", "story": "In 1954, Mariana de Carvalho Junqueira inherited Rancho São Benedito and continued her family’s dedication to coffee growing. She expanded the cultivated area and invested in post-harvest infrastructure. Today, the farm is part of a family group formed by Mariana and her four children, with the properties managed by her son Marcio. Shared processing facilities improve efficiency and sustainability, while careful processing, drying and storage reflect the family’s commitment to quality. The farm also values its workers and natural resources. Its coffees have been exported internationally and have received awards and finalist placements in competitions including Cup of Excellence, BSCA, EMATER-MG, ABIC and Illy.", "notes": ["Chamomile Blossom", "Brown Sugar", "Molasses"], "acidity": 3, "sweetness": 4, "body": 4, "mouthfeel": "Silky and Smooth", "variety": "Yellow Bourbon", "process": "Pulped Natural", "region": "Mantiqueira de Minas", "cert": "2026-18479", "qty": 35, "rep": "Wellington Carlos Pereira", "email": "diretoria@cocarive.com.br", "repImg": "wellington", "img": "img/rancho-sao-benedito.jpg"}, {"id": "caxambu-aracacu", "producer": "Carmem Lucia Chaves de Brito (Ucha)", "farm": "Fazendas Caxambu & Aracaçu", "story": "Located in Três Pontas, Sul de Minas, Caxambu & Aracaçu covers more than 378 hectares, including 214 hectares of coffee and 104 hectares of protected areas. Led by Ucha and her team, the farms combine plantation renewal, environmental care and detailed analysis of each plot to improve quality and consistency. Experimentation and sensory evaluation guide production decisions. This work resulted in a historic achievement at the Cup of Excellence Brazil 2025: first place in the Natural category with an Arara coffee scoring 90.79 points and earning the Presidential Coffee title.", "notes": ["Citrus Fruits", "Nuts", "Cocoa"], "acidity": 3, "sweetness": 3, "body": 3, "mouthfeel": "Smooth", "variety": "Arara", "process": "Natural", "region": "Sul de Minas", "cert": "2026-18540", "qty": 12, "rep": "Maria Dirceia Mendes", "email": "yana@smccafe.com.br", "repImg": "dirceia", "img": "img/caxambu-aracacu.jpg"}, {"id": "fazenda-rancho-grande", "producer": "José Carlos dos Reis", "farm": "Fazenda Rancho Grande", "story": "Fazenda Rancho Grande has been producing coffee in Southern Minas Gerais since 1933, when Mr. Aneite Reis inherited five hectares of coffee plantations. Today, the farm has 540 hectares dedicated to coffee and produces an average of 17,000 bags annually. A BSCA member and Rainforest Alliance Certified, Rancho Grande combines quality, sustainability, environmental responsibility and employee development. Its mission is to continuously improve coffee quality while promoting responsible practices. In 2025, the farm achieved 2nd place in the Experimental Category of the Cup of Excellence, scoring 91.11 points.", "notes": ["Citrus Fruits", "Red Fruits", "Cocoa Nibs"], "acidity": 4, "sweetness": 4, "body": 3, "mouthfeel": "Smooth", "variety": "Arara", "process": "Anaerobic Fermentation", "region": "Sul de Minas", "cert": "2026-18564", "qty": 5, "rep": "Gabriel Miari Brito", "email": "gmiari@cdtcoffees.com.br", "repImg": "gabriel", "img": "img/fazenda-rancho-grande.jpg"}, {"id": "serra-das-tres-barras", "producer": "José Wagner Ribeiro Junqueira", "farm": "Serra das Três Barras", "story": "Serra das Três Barras originated from the division of the bicentennial Fazenda das Três Barras and is now owned by José Wagner Ribeiro Junqueira, as part of a family group. Across six properties, the family cultivates 160 hectares of coffee at elevations ranging from 1,100 to 1,450 meters in Serra da Mantiqueira. Fazenda Serra das Três Barras serves as the group’s headquarters, where all coffees are processed and prepared for sale. With eight generations of rural tradition, the family combines environmental preservation, manual harvesting and careful drying and resting practices. The farm holds Certifica Minas certification and has received awards in competitions including Cup of Excellence, Mantiqueira de Minas, COCARIVE, Illy and EMATER-MG.", "notes": ["Orange Blossom", "Vanilla", "Cocoa"], "acidity": 3, "sweetness": 4, "body": 4, "mouthfeel": "Delicate", "variety": "Arara", "process": "Pulped Natural", "region": "Mantiqueira de Minas", "cert": "2026-18480", "qty": 35, "rep": "Wellington Carlos Pereira", "email": "diretoria@cocarive.com.br", "repImg": "wellington", "img": "img/serra-das-tres-barras.jpg"}, {"id": "sitio-corrego-dantas", "producer": "João Paulo França", "farm": "Sítio Córrego Dantas", "story": "João Paulo França has produced coffee in Ilicínea, Minas Gerais, for more than 20 years, inspired by his father and brothers. His journey has included frost, drought, hailstorms and difficult market periods, but perseverance, continuous learning and hands-on experience led him to specialty coffee production. Awards and recognition have brought greater visibility and new opportunities, strengthening his commitment to continuous improvement. For João Paulo, specialty coffee is rooted in family, passion, resilience and the constant pursuit of quality, with every harvest offering a new opportunity to learn and improve.", "notes": ["Brown Sugar", "Orange", "Vanilla"], "acidity": 4, "sweetness": 5, "body": 4, "mouthfeel": "Velvety", "variety": "Arara", "process": "Natural", "region": "Sul de Minas", "cert": "2026-18596", "qty": 1, "rep": "Gabriel Miari Brito", "email": "gmiari@cdtcoffees.com.br", "repImg": "gabriel", "img": "img/sitio-corrego-dantas.jpg"}, {"id": "capadocia-coffees", "producer": "Augusto Borges", "farm": "Capadocia Coffees", "story": "Capadocia Coffees is dedicated to producing contemporary specialty coffees.", "notes": ["Jasmine", "Lemon", "Brown Sugar"], "acidity": 4, "sweetness": 4, "body": 3, "mouthfeel": "Velvety", "variety": "Arara", "process": "Natural", "region": "Mantiqueira de Minas", "cert": "2026-18625", "qty": 20, "rep": "Augusto Borges", "email": "capadociacoffee@gmail.com", "repImg": "augusto", "img": "img/capadocia-coffees.jpg"}, {"id": "fazendas-dutra", "producer": "Osvaldina Dutra", "farm": "Fazendas Dutra", "story": "Founded in the 1950s by José Dutra Sobrinho (Zeca Dutra) with just over one hectare in Minas Gerais, Fazendas Dutra grew through his dedication to coffee farming. By the time of his passing in 1999, the farm had expanded to over 300 hectares, leaving a legacy to his wife, Osvaldina Dutra, and their family. With more than 35 years of experience across the coffee production chain, the family produces specialty and organic coffees recognized in Brazil and abroad. Today, fourth-generation producers Victoria and Maria Clara Dutra are at the forefront of this journey, combining tradition, innovation, family values and global ambition.", "notes": ["Floral", "Fruity", "Brown Sugar"], "acidity": 4, "sweetness": 4, "body": 4, "mouthfeel": "Smooth", "variety": "Geisha", "process": "Honey", "region": "Matas de Minas", "cert": "2026-18590", "qty": 3, "rep": "Victoria Nacif Dutra", "email": "contato@fazendasdutra.com.br", "repImg": "victoria", "img": "img/fazendas-dutra.jpg"}, {"id": "fazenda-sao-pedro", "producer": "Edson Luiz Ignacio", "farm": "Fazenda São Pedro", "story": "Fazenda São Pedro is a family-owned coffee operation in Minas Gerais, with production areas in Tapira, Cerrado Mineiro, and Medeiros, Canastra, at altitudes ranging from 1,180 to 1,330 meters. It manages approximately 700 hectares of coffee, including 448 productive hectares, all drip-irrigated for precise water management. The farm grows multiple varieties and uses Natural, Pulped Natural, Semi-Washed and controlled fermentation processes, with full traceability. A BSCA member, Fazenda São Pedro holds Rainforest Alliance, 4C and Regenagri certifications, as well as the Cerrado Mineiro Designation of Origin. Its coffees have earned recognition in competitions including Cup of Excellence and the Cerrado Mineiro Region Award. Through its own export operation, the farm offers direct communication, transparency and careful shipment management.", "notes": ["Stone Fruits", "Floral", "Molasses"], "acidity": 4, "sweetness": 4, "body": 3, "mouthfeel": "Creamy", "variety": "Arara", "process": "Natural", "region": "Cerrado Mineiro", "cert": "2026-18579", "qty": 50, "rep": "Augusto Borges", "email": "capadociacoffee@gmail.com", "repImg": "augusto", "img": "img/fazenda-sao-pedro.jpg"}, {"id": "sitio-da-torre", "producer": "Alvaro Antonio Pereira Coli", "farm": "Sítio da Torre", "story": "Located in Mantiqueira de Minas at altitudes ranging from 1,100 to 1,300 meters, Sítio da Torre combines ideal mountain conditions with a coffee-growing tradition that began in the 19th century, when Antonio Coli arrived from Italy. Today, the fourth generation continues the family legacy, focusing on specialty coffee production since 2002, with careful manual harvesting, processing and lot traceability. The farm is certified by Certifica Minas and affiliated with BSCA. Its pursuit of quality has earned numerous awards, including 29 award-winning entries in the Brazilian Cup of Excellence competitions, alongside other specialty coffee awards.", "notes": ["Floral", "Red Fruits", "Sweet"], "acidity": 3, "sweetness": 4, "body": 4, "mouthfeel": "Velvety", "variety": "Yellow Bourbon", "process": "Pulped Natural", "region": "Mantiqueira de Minas", "cert": "2026-18481", "qty": 35, "rep": "Wellington Carlos Pereira", "email": "diretoria@cocarive.com.br", "repImg": "wellington", "img": "img/sitio-da-torre.jpg"}];
+const REPIMG = {phelippe:["rep-phelippe"],gabriel:["rep-gabriel"],silvio:["rep-silvio"],dirceia:["rep-dirceia"],romulo:["rep-romulo"],otavio:["rep-otavio"],wellington:["rep-wellington"],augusto:["rep-augusto"],victoria:["rep-victoria"],montealegre:["rep-montealegre-b","rep-montealegre-a"]};
+const $ = (s,el=document)=>el.querySelector(s), $$=(s,el=document)=>[...el.querySelectorAll(s)];
+const esc = s=>String(s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const pad = n=>String(n).padStart(2,"0");
+const byId = Object.fromEntries(COFFEES.map((c,i)=>[c.id,{...c,no:i+1}]));
+const uniq = k=>[...new Set(COFFEES.map(c=>c[k]))].sort((a,b)=>a.localeCompare(b));
+
+/* analytics hook for hosted copies (GA4 / GTM pick these up when installed) */
+function track(evt,params){try{(window.dataLayer=window.dataLayer||[]).push({event:evt,...params});if(typeof window.gtag==="function")window.gtag("event",evt,params);}catch(e){}}
+
+/* ---------- seigaiha pattern drawn in theme colours ---------- */
+function drawWaves(){
+  const cs=getComputedStyle(document.documentElement);
+  const bg=cs.getPropertyValue("--paper").trim(), ln=cs.getPropertyValue("--tan").trim();
+  const W=112,H=56,c=document.createElement("canvas");c.width=W;c.height=H;const x=c.getContext("2d");
+  x.fillStyle=bg;x.fillRect(0,0,W,H);x.lineWidth=2.6;
+  const scale=(cx,cy)=>{for(let r=55;r>4;r-=11){x.beginPath();x.arc(cx,cy,r,0,Math.PI*2);x.fillStyle=bg;x.fill();x.strokeStyle=ln;x.stroke();}};
+  [[56,-28],[0,0],[112,0],[56,28],[0,56],[112,56],[56,84]].forEach(([a,b])=>scale(a,b));
+  const url=c.toDataURL();
+  $$(".waves").forEach(el=>el.style.backgroundImage=`url(${url})`);
+}
+
+/* ---------- facts ---------- */
+function renderFacts(){
+  const f=[[COFFEES.length,"Coffees"],[uniq("region").length,"Producing regions"],[uniq("variety").length,"Varieties"],[uniq("process").length,"Processes"]];
+  $("#facts").innerHTML=f.map(([n,l])=>`<div class="fact"><b>${n}</b><span>${l}</span></div>`).join("");
+}
+
+/* ---------- index tiles + filters ---------- */
+function fillSelect(id,key){const s=$(id);uniq(key).forEach(v=>{const o=document.createElement("option");o.value=v;o.textContent=v;s.appendChild(o);});}
+function renderTiles(){
+  $("#tiles").innerHTML=COFFEES.map((c,i)=>`<li class="tile" data-id="${c.id}"><a href="#${c.id}" data-jump="${c.id}">
+    <div class="ph"><img src="${c.img}" alt="" loading="lazy" width="945" height="427"><span class="no">No. ${pad(i+1)}</span></div>
+    <div class="tbody"><span class="farm">${c.farm!==c.producer?esc(c.farm):"Estate coffee"}</span><h3>${esc(c.producer)}</h3>
+    <span class="meta">${esc(c.region)} · ${esc(c.variety)} · ${esc(c.process)}</span>
+    <span class="meta">${c.notes.map(esc).join(" · ")}</span>
+    <span class="views" data-tile-views="${c.id}"><svg><use href="#i-eye"/></svg><span>–</span></span></div></a></li>`).join("");
+}
+function applyFilters(){
+  const q=$("#q").value.trim().toLowerCase(), r=$("#f-region").value, p=$("#f-process").value, v=$("#f-variety").value;
+  let n=0;
+  COFFEES.forEach(c=>{
+    const hay=[c.producer,c.farm,c.region,c.variety,c.process,c.rep,...c.notes].join(" ").toLowerCase();
+    const ok=(!q||hay.includes(q))&&(!r||c.region===r)&&(!p||c.process===p)&&(!v||c.variety===v);
+    $(`.tile[data-id="${c.id}"]`).hidden=!ok; if(ok)n++;
+  });
+  $("#count").textContent=`${n} of ${COFFEES.length} coffees`;
+  $("#clear").hidden=!(q||r||p||v);
+  let em=$("#empty"); if(!n){if(!em){em=document.createElement("li");em.id="empty";em.className="empty";em.textContent="No coffee matches these filters. Clear them to see the full selection.";$("#tiles").appendChild(em);}}else em?.remove();
+}
+
+/* ---------- lots ---------- */
+const dots=(n)=>Array.from({length:5},(_,i)=>`<i class="${i<n?"on":""}"></i>`).join("");
+function renderLots(){
+  $("#lots").innerHTML=COFFEES.map((c,i)=>{
+    const prev=COFFEES[i-1], next=COFFEES[i+1];
+    const imgs=(REPIMG[c.repImg]||[]).map(k=>`<img src="img/${k}.jpg" alt="" loading="lazy" width="200" height="200">`).join("");
+    return `<article class="lot" id="${c.id}" data-id="${c.id}" aria-labelledby="h-${c.id}">
+    <div class="lot-hero"><img src="${c.img}" alt="${esc(c.producer)}, ${esc(c.farm)}" loading="lazy" width="945" height="427">
+      <span class="no">No. ${pad(i+1)} / ${COFFEES.length}</span><span class="cert">BSCA certified</span>
+      <div class="cap">${c.farm!==c.producer?`<div class="farm">${esc(c.farm)}</div>`:""}<h3 id="h-${c.id}">${esc(c.producer)}</h3><span class="sel" aria-hidden="true">selection</span></div></div>
+    <div class="lot-body">
+      <div class="lot-story"><span class="label">${esc(c.region)} · Brazil</span><p>${esc(c.story)}</p></div>
+      <div class="lot-sheet">
+        <div class="flavor"><div class="h">Flavor<br>notes</div><ul>${c.notes.map(n=>`<li>${esc(n)}</li>`).join("")}</ul></div>
+        <div class="scales">
+          <div class="scale" role="img" aria-label="Acidity ${c.acidity} of 5"><div class="t">Acidity</div><div class="dots">${dots(c.acidity)}</div><div class="sub"></div></div>
+          <div class="scale" role="img" aria-label="Sweetness ${c.sweetness} of 5"><div class="t">Sweetness</div><div class="dots">${dots(c.sweetness)}</div><div class="sub"></div></div>
+          <div class="scale" role="img" aria-label="Mouthfeel ${c.body} of 5, ${esc(c.mouthfeel)}"><div class="t">Mouthfeel</div><div class="dots">${dots(c.body)}</div><div class="sub">${esc(c.mouthfeel)}</div></div>
+        </div>
+        <div class="spec">
+          <div class="row two"><div class="cell"><span class="k">Variety</span><span class="v">${esc(c.variety)}</span></div><div class="cell"><span class="k">Process</span><span class="v">${esc(c.process)}</span></div></div>
+          <div class="row"><div class="cell"><span class="k">Region</span><span class="v">${esc(c.region)}</span></div></div>
+          <div class="row cq"><div class="cell"><span class="k">Certificate</span><span class="v mono">${esc(c.cert)}</span></div><div class="cell"><span class="k">Qty</span><span class="v mono">${pad(c.qty)}</span></div></div>
+        </div>
+        <div class="rep">
+          <div class="rep-ph">${imgs}</div>
+          <div style="min-width:0"><div class="who">Representative</div><div class="name">${esc(c.rep)}</div>
+            <div class="actions"><a class="mail" href="mailto:${esc(c.email)}?subject=${encodeURIComponent("Taste of the Harvest 2026 · "+c.farm+" (cert. "+c.cert+")")}" data-contact="${c.id}" data-kind="email">${esc(c.email)}</a></div>
+            <div class="actions" style="margin-top:10px">
+              <a class="mini solid" href="mailto:${esc(c.email)}?subject=${encodeURIComponent("Taste of the Harvest 2026 · "+c.farm+" (cert. "+c.cert+")")}" data-contact="${c.id}" data-kind="email"><svg><use href="#i-mail"/></svg>Send e-mail</a>
+              <button class="mini" type="button" data-copy="${esc(c.email)}" data-contact="${c.id}" data-kind="copy"><svg><use href="#i-copy"/></svg>Copy address</button>
+            </div></div>
+        </div>
+        <div class="lot-foot">
+          <div class="stat" data-stat="${c.id}"><span><svg><use href="#i-eye"/></svg><b data-v>–</b> views</span><span><svg><use href="#i-mail"/></svg><b data-k>–</b> contact clicks</span></div>
+          <div class="pager">
+            ${prev?`<a class="mini" href="#${prev.id}" data-jump="${prev.id}" aria-label="Previous coffee: ${esc(prev.producer)}">← Prev</a>`:""}
+            <a class="mini" href="#coffees" aria-label="Back to all coffees"><svg><use href="#i-up"/></svg>All coffees</a>
+            ${next?`<a class="mini" href="#${next.id}" data-jump="${next.id}" aria-label="Next coffee: ${esc(next.producer)}">Next →</a>`:""}
+          </div>
+        </div>
+      </div>
+    </div></article>`;}).join("");
+}
+
+/* ---------- drawer ---------- */
+function renderDrawer(){
+  const groups={};COFFEES.forEach((c,i)=>{(groups[c.region]??=[]).push([c,i]);});
+  $("#drawer-body").innerHTML=Object.keys(groups).sort().map(r=>`<h3>${esc(r)} · ${groups[r].length}</h3><ol>${groups[r].map(([c,i])=>`<li><a href="#${c.id}" data-jump="${c.id}" data-drawer-link="${c.id}"><img src="${c.img}" alt="" loading="lazy"><span><span class="pn">${esc(c.producer)}</span><span class="pf">No. ${pad(i+1)} · ${esc(c.farm)}</span></span></a></li>`).join("")}</ol>`).join("");
+}
+let lastFocus=null;
+function openDrawer(){lastFocus=document.activeElement;const d=$("#drawer");d.classList.add("open");d.setAttribute("aria-hidden","false");$$("[data-open-index]").forEach(b=>b.setAttribute("aria-expanded","true"));document.body.style.overflow="hidden";const cur=$('[data-drawer-link][aria-current="true"]');(cur||$(".panel .x")).focus({preventScroll:true});cur?.scrollIntoView({block:"center"});}
+function closeDrawer(restore=true){const d=$("#drawer");if(!d.classList.contains("open"))return;d.classList.remove("open");d.setAttribute("aria-hidden","true");$$("[data-open-index]").forEach(b=>b.setAttribute("aria-expanded","false"));document.body.style.overflow="";if(restore)lastFocus?.focus?.({preventScroll:true});}
+
+/* ---------- navigation ---------- */
+function jumpTo(id){
+  const el=document.getElementById(id);if(!el)return;
+  closeDrawer(false);
+  el.scrollIntoView({behavior:matchMedia("(prefers-reduced-motion: reduce)").matches?"auto":"smooth",block:"start"});
+  el.classList.add("flash");setTimeout(()=>el.classList.remove("flash"),1600);
+  try{history.replaceState(null,"","#"+id);}catch(e){}
+  if(byId[id]){Metrics.view(id,"index");}
+}
+document.addEventListener("click",e=>{
+  const j=e.target.closest("[data-jump]");if(j){e.preventDefault();jumpTo(j.dataset.jump);return;}
+  if(e.target.closest("[data-open-index]")){openDrawer();return;}
+  if(e.target.closest("[data-close-index]")){closeDrawer();return;}
+  const cp=e.target.closest("[data-copy]");
+  if(cp){const t=cp.dataset.copy;const done=()=>toast("E-mail copied: "+t);
+    try{navigator.clipboard.writeText(t).then(done,()=>{selectText(cp.closest(".rep").querySelector(".mail"));toast("Press Ctrl/⌘ + C to copy");});}catch(err){selectText(cp.closest(".rep").querySelector(".mail"));toast("Press Ctrl/⌘ + C to copy");}
+  }
+  const ct=e.target.closest("[data-contact]");
+  if(ct){Metrics.contact(ct.dataset.contact,ct.dataset.kind);}
+});
+document.addEventListener("keydown",e=>{if(e.key==="Escape")closeDrawer();
+  if(e.key==="Tab"&&$("#drawer").classList.contains("open")){const f=$$("#drawer .panel a,#drawer .panel button");const a=f[0],z=f[f.length-1];if(e.shiftKey&&document.activeElement===a){e.preventDefault();z.focus();}else if(!e.shiftKey&&document.activeElement===z){e.preventDefault();a.focus();}}});
+function selectText(el){try{const r=document.createRange();r.selectNodeContents(el);const s=getSelection();s.removeAllRanges();s.addRange(r);}catch(e){}}
+let tt;function toast(m){const t=$("#toast");t.textContent=m;t.classList.add("show");clearTimeout(tt);tt=setTimeout(()=>t.classList.remove("show"),2200);}
+
+/* ---------- scroll spy, progress, fab ---------- */
+function setupSpy(){
+  const secs=["story","coffees","metrics"].map(id=>document.getElementById(id));
+  const navs=$$("[data-spy]");
+  let current=null;
+  const lotObs=new IntersectionObserver(es=>{es.forEach(en=>{const id=en.target.id;
+      if(en.isIntersecting&&en.intersectionRatio>=.35){current=id;$$("[data-drawer-link]").forEach(a=>a.setAttribute("aria-current",a.dataset.drawerLink===id?"true":"false"));Metrics.armView(id);}
+      else Metrics.disarmView(id);});},{threshold:[0,.35,.6]});
+  $$(".lot").forEach(l=>lotObs.observe(l));
+  const onScroll=()=>{
+    const h=document.documentElement;const p=h.scrollTop/(h.scrollHeight-h.clientHeight||1);
+    $("#progress").style.width=(p*100).toFixed(2)+"%";
+    $("#fab").classList.toggle("show",h.scrollTop>innerHeight*.9);
+    const y=h.scrollTop+innerHeight*.35;let act="";
+    secs.forEach(s=>{if(s&&s.offsetTop<=y)act=s.id;});
+    const lots=$("#lots");if(y>=lots.offsetTop&&y<lots.offsetTop+lots.offsetHeight)act="coffees";
+    navs.forEach(a=>a.setAttribute("aria-current",a.dataset.spy===act?"true":"false"));
+  };
+  addEventListener("scroll",onScroll,{passive:true});onScroll();
+}
+
+/* ---------- metrics (shared db: one doc per viewer, totals summed live) ---------- */
+const Metrics=(()=>{
+  const totals={};COFFEES.forEach(c=>totals[c.id]={v:0,k:0});
+  let db=null,ref=null,mine=null,ready=false,pending=[],seen=new Set(),timers={},writing=false,dirty=false,flushT=null,canWrite=false,sortBy="views";
+  const status=(cls,msg)=>{const s=$("#mstatus");s.className="mstatus "+cls;s.querySelector("span").textContent=msg;};
+  function bump(id,f){if(!canWrite)return;if(!ready){pending.push([id,f]);return;}const o=mine[id]||(mine[id]={v:0,k:0});o[f]=(o[f]||0)+1;dirty=true;clearTimeout(flushT);flushT=setTimeout(flush,1200);}
+  async function flush(){if(writing||!dirty||!ref)return;writing=true;dirty=false;
+    try{await ref.set({c:JSON.parse(JSON.stringify(mine)),at:new Date().toISOString()});}
+    catch(e){if(e&&e.code==="invalid_argument"){canWrite=false;status("live","Live · your visit isn’t counted in this view");}else if(e&&e.code==="unavailable"){dirty=true;setTimeout(flush,2500+Math.random()*1500);}}
+    finally{writing=false;if(dirty)flushT=setTimeout(flush,1200);}}
+  function view(id,src){if(seen.has(id))return;seen.add(id);track("coffee_view",{coffee_id:id,coffee_name:byId[id]?.producer,source:src||"scroll"});bump(id,"v");}
+  function contact(id,kind){track("coffee_contact",{coffee_id:id,coffee_name:byId[id]?.producer,method:kind});bump(id,"k");}
+  function armView(id){if(seen.has(id)||timers[id])return;timers[id]=setTimeout(()=>{delete timers[id];view(id,"scroll");},2000);}
+  function disarmView(id){clearTimeout(timers[id]);delete timers[id];}
+  function render(){
+    let tv=0,tk=0;COFFEES.forEach(c=>{tv+=totals[c.id].v;tk+=totals[c.id].k;});
+    $("#k-views").textContent=tv.toLocaleString("en-US");$("#k-contacts").textContent=tk.toLocaleString("en-US");
+    const top=[...COFFEES].sort((a,b)=>totals[b.id].v-totals[a.id].v)[0];
+    $("#k-top").textContent=tv?top.producer:"–";
+    const rows=COFFEES.map((c,i)=>({c,i,...totals[c.id]}));
+    if(sortBy==="views")rows.sort((a,b)=>b.v-a.v||b.k-a.k||a.i-b.i);else if(sortBy==="contacts")rows.sort((a,b)=>b.k-a.k||b.v-a.v||a.i-b.i);
+    const mv=Math.max(1,...rows.map(r=>r.v)),mk=Math.max(1,...rows.map(r=>r.k));
+    $("#mbody").innerHTML=rows.map((r,ix)=>`<tr><td class="rk">${pad(sortBy==="catalog"?r.i+1:ix+1)}</td><td class="nm"><a href="#${r.c.id}" data-jump="${r.c.id}">${esc(r.c.producer)}</a><small>${esc(r.c.farm)} · ${esc(r.c.region)}</small></td>
+      <td><div class="bar"><i style="width:${(r.v/mv*100).toFixed(1)}%"></i></div></td><td class="num">${r.v}</td>
+      <td><div class="bar k"><i style="width:${(r.k/mk*100).toFixed(1)}%"></i></div></td><td class="num">${r.k}</td></tr>`).join("");
+    COFFEES.forEach(c=>{const s=$(`[data-stat="${c.id}"]`);if(s){s.querySelector("[data-v]").textContent=totals[c.id].v;s.querySelector("[data-k]").textContent=totals[c.id].k;}
+      const t=$(`[data-tile-views="${c.id}"] span`);if(t)t.textContent=`${totals[c.id].v} views · ${totals[c.id].k} contacts`;});
+  }
+  $$(".seg button").forEach(b=>b.addEventListener("click",()=>{sortBy=b.dataset.sort;$$(".seg button").forEach(x=>x.setAttribute("aria-pressed",x===b?"true":"false"));render();}));
+  async function init(){
+    render();
+    if(!window.claude||typeof window.claude.use!=="function"){status("","Metrics are recorded when this page is opened from claude.ai");return;}
+    try{db=await window.claude.use("db");}catch(e){db=null;}
+    if(!db){status("","Metrics aren’t available in this view");return;}
+    let user=null;try{user=await window.claude.use("user");}catch(e){}
+    let uid=null;try{uid=user?await user.id():null;}catch(e){}
+    db.collection("metrics").onSnapshot(snap=>{
+      COFFEES.forEach(c=>totals[c.id]={v:0,k:0});
+      snap.docs.forEach(d=>{const b=d.data()?.c||{};for(const id in b){if(totals[id]){totals[id].v+=Number(b[id].v)||0;totals[id].k+=Number(b[id].k)||0;}}});
+      if(!canWrite)status("live",uid?"Live · your visit isn’t counted in this view":"Live");else status("live","Live");
+      render();
+    },err=>status("","Metrics are temporarily unavailable"));
+    if(uid){
+      try{const w=user&&typeof user.can==="function"?await user.can("data.write"):null;canWrite=w!==false;}catch(e){canWrite=true;}
+      if(canWrite){
+        try{ref=db.doc("metrics/"+uid);const s=await ref.get();const b=s.exists?(s.data()?.c||{}):{};mine=JSON.parse(JSON.stringify(b));}
+        catch(e){mine={};}
+        ready=true;const q=pending;pending=[];q.forEach(([id,f])=>bump(id,f));
+        status("live","Live");
+      }
+    }
+  }
+  return {init,view,contact,armView,disarmView};
+})();
+
+/* ---------- boot ---------- */
+renderFacts();fillSelect("#f-region","region");fillSelect("#f-process","process");fillSelect("#f-variety","variety");
+renderTiles();renderLots();renderDrawer();applyFilters();
+["#q","#f-region","#f-process","#f-variety"].forEach(s=>$(s).addEventListener("input",applyFilters));
+$("#clear").addEventListener("click",()=>{$("#q").value="";["#f-region","#f-process","#f-variety"].forEach(s=>$(s).value="");applyFilters();$("#q").focus();});
+drawWaves();
+matchMedia("(prefers-color-scheme: dark)").addEventListener?.("change",drawWaves);
+new MutationObserver(drawWaves).observe(document.documentElement,{attributes:true,attributeFilter:["data-theme"]});
+setupSpy();
+Metrics.init();
+if(location.hash&&byId[location.hash.slice(1)])setTimeout(()=>jumpTo(location.hash.slice(1)),300);
+</script>
+
+</body></html>
